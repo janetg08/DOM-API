@@ -1,0 +1,50 @@
+/* CSS files add styling rules to your content */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Lato&display=swap');
+
+body {
+  background-image: url("https://cdn.glitch.com/30eb664a-9e7f-4ed0-b69f-916208fc5ca7%2Fcurrency%20background.jpg?v=1591730837422");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 2em;
+  color: #8f2c4b;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Courier Prime', monospace;
+  text-decoration: underline;
+  color: #8f2c4b;
+}
+
+.card-body, #results {
+  background-color: white;
+  border: solid 2px #8a679e;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+/*   padding-bottom: 0rem; */
+}
+
+form {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #8f2c4b;
+}
+
+input {
+  text-align: center;
+  background-color: white;
+  border: none;
+}
+
+.btn {
+  color: white;
+  background-color: #8a679e;
+  border: solid 2px #8f2c4b;
+}
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Currency Conversions</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title" style="margin-bottom: 0rem">
+          Currency Conversions
+        </h1>
+        <p class="card-text">
+          Use this webpage to determine currency conversion rates before
+          embarking on your next adventure!
+        </p>
+        <p>
+          Currency data is currently available for the following: USD, AUD, GBP, and EUR.
+        </p>
+        <p>
+          Note: The reset button is not currently working. To check another currency conversion, simply reload the page.
+        </p>
+      </div>
+    </div>
+    <br />
+    <div class="card">
+      <div class="card-body">
+        <label>
+          Select your base currency:
+          <select id="baseSelect">
+            <option id="base0">Select</option>
+            <option id="baseUSD">USD</option>
+            <option id="baseAUD">AUD</option>
+            <option id="baseGBP">GBP</option>
+            <option id="baseEUR">EUR</option>
+          </select>
+        </label>
+        <br />
+        <br />
+        <div class="input-field col sm-6" style="margin-bottom: 2px;">
+          <input
+            placeholder="Amount"
+            id="query"
+            type="number"
+            class="validate"
+          />
+        </div>
+        <br />
+        <label>
+          Converting to:
+          <select id="convertSelect">
+            <option id="convert0">Select</option>
+            <option id="convertUSD">USD</option>
+            <option id="convertAUD">AUD</option>
+            <option id="convertGBP">GBP</option>
+            <option id="convertEUR">EUR</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-sm" id="convert">
+            Convert It
+          </button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-sm" id="reset">
+            Reset
+          </button>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </div>
+    <br />
+
+    <div class="card">
+      <div class="card-body" id="results">
+        <div class="card-text">
+          <p>
+            The results of your currency conversion will be displayed here...
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+  </body>
+</html>
